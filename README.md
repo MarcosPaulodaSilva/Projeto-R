@@ -4,9 +4,9 @@ Repositório principal do **Projeto R**, RPG de ação 2D isométrico em pixel a
 
 ## Estado atual
 
-- Build atual: **v0.15.2 — Vadronia / Castelo Morigan**
+- Build atual: **v0.16.0 — Vadronia**
 - Região em foco: **Vadronia**
-- Núcleo jogável: **Grünwald + Ruínas + Castelo Morigan**
+- Núcleo jogável: **Grünwald + Ruínas + Castelo Morigan + Guilda**
 - Plataforma-alvo: **Windows**
 - Branch principal: `main`
 
@@ -18,12 +18,14 @@ Projeto-R/
 │  ├─ legacy/
 │  ├─ v0.14/
 │  ├─ v0.15/
+│  ├─ v0.16/
 │  └─ README.md
 ├─ docs/
 │  ├─ design/
 │  ├─ lore/
 │  └─ prompts/
 ├─ project-state/
+│  └─ README.md
 ├─ reports/
 └─ README.md
 ```
@@ -31,13 +33,13 @@ Projeto-R/
 ## Convenção de nomes
 
 - arquivos em minúsculas e `kebab-case`;
-- builds: `projeto-r-vX.Y.Z-vadronia.html` quando a versão possui três componentes;
+- builds: `projeto-r-vX.Y.Z-vadronia.html`;
 - documentos de estado: `project-state-vX.Y.Z.md`;
 - auditorias: `auditoria-projeto-r-vX.Y.Z.*`;
 - versões históricas são preservadas e organizadas por linha de versão.
 
 A build oficial mais recente está em:
 
-`builds/v0.15/projeto-r-v0.15.2-vadronia.html`
+`builds/v0.16/projeto-r-v0.16.0-vadronia.html`
 
-Consulte `builds/README.md` para a sequência histórica disponível.
+Consulte `builds/README.md` para o histórico de builds e `project-state/README.md` para os estados do projeto disponíveis.
