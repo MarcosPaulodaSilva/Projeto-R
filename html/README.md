@@ -1,18 +1,21 @@
 # Projeto R — HTML
 
-Esta pasta reúne a versão de navegador e o histórico original do Projeto R. A versão mais recente aqui é **v0.16.1 — Vadronia**; essa numeração pertence apenas ao HTML.
+Esta pasta preserva a implementação de navegador e seu histórico. A versão mais recente é **v0.16.1 — Vadronia**.
 
-## Abrir
+## Abrir a versão mais recente
 
-Baixe o arquivo [projeto-r-v0.16.1-vadronia.html](builds/v0.16/projeto-r-v0.16.1-vadronia.html) e abra-o em um navegador. A página de código do GitHub não executa o jogo diretamente.
+Baixe [projeto-r-v0.16.1-vadronia.html](builds/v0.16/projeto-r-v0.16.1-vadronia.html) e abra-o em um navegador.
 
-## Conteúdo
+## Onde está cada coisa
 
-- [builds/](builds/README.md): arquivos HTML originais das linhas legacy, v0.14, v0.15 e v0.16.
-- [project-state/](project-state/README.md): estados históricos fornecidos para as versões HTML.
-- [reports/](reports/): auditorias históricas do HTML.
-- [docs/prompts/](docs/prompts/): prompt de referência da linha v0.15.
+- [Histórico de builds](builds/README.md)
+- [PROJECT_STATE por versão](project-state/README.md)
+- [Auditorias](reports/)
+- [Índice da documentação HTML](docs/README.md)
+- [Prompt mestre histórico](docs/prompts/super-master-prompt-projeto-r-base-v0.15-cloud.txt)
+- [Informações compartilhadas copiadas localmente](docs/shared/README.md)
+- [Referência do estado atual da Unity](docs/platform-reference/README.md)
 
-Os arquivos HTML foram movidos sem alteração de conteúdo; as versões ausentes não foram inventadas. Documentos históricos descrevem o contexto da época e não substituem a direção atual da versão Unity.
+Os documentos compartilhados existem também dentro desta pasta para evitar que lore, direção visual e decisões comuns desapareçam quando a linha HTML é trabalhada isoladamente. As fontes canônicas continuam em `/docs/` e `/assets/`.
 
-O projeto do Editor fica em [unity/](../unity/README.md). Lore e referências compartilhadas ficam em [docs/](../docs/README.md).
+A implementação ativa em Unity fica em [unity/](../unity/README.md). Detalhes técnicos específicos de uma plataforma não devem ser tratados automaticamente como equivalentes na outra.
