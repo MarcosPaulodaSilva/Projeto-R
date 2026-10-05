@@ -32,7 +32,8 @@ Não há arquivo standalone fornecido para **0.15.3** nem **0.15.7**. Essas etap
 
 ## Linha v0.16
 
-1. `v0.16/projeto-r-v0.16.0-vadronia.html` — build atual
+1. `v0.16/projeto-r-v0.16.0-vadronia.html`
+2. `v0.16/projeto-r-v0.16.1-vadronia.html` — build atual
 
 ## Regra
 
