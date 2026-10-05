@@ -8,6 +8,7 @@ Estados consolidados preservados no repositório:
 4. `project-state-v0.15.5.md`
 5. `project-state-v0.15.6.md`
 6. `project-state-v0.15.8.md`
+7. `project-state-v0.16.1.md`
 
 Não foram fornecidos arquivos PROJECT_STATE independentes para **0.15.3**, **0.15.7** ou **0.16.0**.
 
