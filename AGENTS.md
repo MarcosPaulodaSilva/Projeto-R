@@ -3,6 +3,7 @@
 - Não gerar executáveis nem pacotes de distribuição Windows sem novo pedido explícito de Marcos.
 - Leia `unity/project-state/unity-local-2026-10-04.md` antes de alterar a demo.
 - Unity e HTML estão separados em `unity/` e `html/`. Os fontes Unity continuam em `unity/VadroniaDemo`; o HTML e seu histórico ficam em `html/`. Lore, referências e manifesto de áudio na raiz são compartilhados. Não misturar implementações nem suas numerações de versão.
+- O Super Master específico da Unity fornecido por Marcos está em `unity/docs/prompts/super-master-prompt-projeto-r-unity.md`; o Super Master HTML permanece em `html/docs/prompts/`. Consulte o documento da implementação correspondente e o estado validado antes de continuar o trabalho.
 - A direção mais recente é Unity 6.6, 2D top-down com personagens de corpo visível; não isométrico, não plataforma, não HTML.
 - O passo 1 foi aplicado. Marcos autorizou agora uma grande atualização gráfica e mecânica, priorizando visual/animação. Sua correção mais recente exige passos baixos e alternância real das duas pernas, sem joelho alto.
 - Projeto aberto pelo usuário: `C:/Users/Marcos/Downloads/VadroniaDemo`. As alterações devem chegar à pasta real do Editor e ser validadas ali; não entregar apenas ZIPs ou código isolado.

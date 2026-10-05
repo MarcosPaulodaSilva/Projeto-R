@@ -1,6 +1,8 @@
 # Documentação — Unity
 
 ## Unity
+- [Super Master Prompt — Unity](prompts/super-master-prompt-projeto-r-unity.md)
+- [Origem e conferência do prompt](prompts/README.md)
 - [Bíblia de pré-produção e design](design/biblia-projeto-r-pre-producao-unity-pos-auditoria.txt)
 - [Estado e validações locais](../project-state/unity-local-2026-10-04.md)
 - [Como jogar / projeto do Editor](../VadroniaDemo/LEIA-ME.md)

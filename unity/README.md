@@ -17,6 +17,7 @@ Na máquina de Marcos, a cópia já aberta continua em `C:/Users/Marcos/Download
 - [Estado atual do projeto](VadroniaDemo/PROJECT_STATE.md)
 - [Histórico/validação local](project-state/unity-local-2026-10-04.md)
 - [Índice da documentação Unity](docs/README.md)
+- [Super Master Prompt — Unity](docs/prompts/super-master-prompt-projeto-r-unity.md)
 - [Design e pré-produção](docs/design/biblia-projeto-r-pre-producao-unity-pos-auditoria.txt)
 - [Informações compartilhadas copiadas localmente](docs/shared/README.md)
 - [Referência da linha HTML v0.16.1](docs/platform-reference/README.md)
