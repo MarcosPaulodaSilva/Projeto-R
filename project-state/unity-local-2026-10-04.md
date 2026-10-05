@@ -70,3 +70,11 @@ Unity 6000.6.0f1 compilou os scripts. `DemoSetup.ValidateDemo()` passou 20 verif
 Capturas da Game view inspecionadas: `adventure-first.png`, `adventure-hud.png`, `gait-poses.png`, `gait-final.png` e `adventure-dialog.png`, dentro de `.local-backups/`. A captura de poses é um arranjo temporário de verificação; os atores extras foram removidos ao reiniciar Play. Ajuste final reduziu a separação dos pivôs laterais para zero, mantendo a alternância simétrica.
 
 Os testes de controle foram programáticos; não representam um teste físico de teclado por Marcos nem a aprovação artística dele. A versão continua limitada a exploração externa e uma missão, sem combate/interiores. Nenhum executável ou pacote Windows foi gerado. Detalhes e procedência da arte em `unity/VadroniaDemo/LEIA-ME.md`, `PROJECT_STATE.md` e `ARTWORK.md`.
+
+### Fechamento da validação
+
+A checagem final identificou a conversão incorreta de unidades em `Sprite.OverrideGeometry`. Corrigida para coordenadas em pixels no retângulo do sprite, conforme a documentação Unity: https://docs.unity.com/en-us/engine/6000.3/script-reference/unityengine/sprite/overridegeometry. Acrescentada uma verificação da geometria lateral de ambos os atores: total final de **20 testes de lógica + 11 testes em Play**, aprovados.
+
+O script temporário de múltiplas cópias de atores gerou mensagens por tentar redefinir geometria de sprites já usados durante a renderização. Ele não faz parte dos Assets e não deve ser reutilizado. A inspeção final utilizou o próprio Player, sem recriar sprites ativos; capturas `gait-side-verified.png` e `gait-contact-verified.png`. Novo Play e testes concluídos com zero erros e zero avisos no Console. GUIDs antigos preservados e 75 arquivos de Assets conferidos por SHA-256 entre workspace e Editor, sem diferenças antes do ajuste; CharacterView e AdventurePlayChecks ressincronizados após a correção.
+
+Atualização publicada na branch `codex/unity-local-continuation` do repositório correto, sem merge na main.

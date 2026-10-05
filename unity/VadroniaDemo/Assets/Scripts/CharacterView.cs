@@ -54,7 +54,8 @@ namespace Vadronia
             var sprite=Slice(atlas,rect,new Vector2(.5f,1),ppu);
             // Trim the occluded boot from this neutral side pose so each limb shows one foot.
             var shape=new[]{new Vector2(0,0),new Vector2(1,0),new Vector2(1,.20f),new Vector2(.76f,.34f),new Vector2(.72f,.60f),new Vector2(.88f,1),new Vector2(0,1)};
-            for(int i=0;i<shape.Length;i++)shape[i]=new Vector2(((mirrored?1-shape[i].x:shape[i].x)-.5f)*rect.width/ppu,(shape[i].y-1)*rect.height/ppu);
+            // OverrideGeometry receives pixel coordinates inside the sprite rect; Unity applies its pivot and PPU.
+            for(int i=0;i<shape.Length;i++)shape[i]=new Vector2((mirrored?1-shape[i].x:shape[i].x)*rect.width,shape[i].y*rect.height);
             sprite.OverrideGeometry(shape,new ushort[]{0,1,2,0,2,3,0,3,4,0,4,5,0,5,6});
             return sprite;
         }

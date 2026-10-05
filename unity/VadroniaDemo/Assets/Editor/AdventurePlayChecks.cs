@@ -44,6 +44,14 @@ namespace Vadronia.Editor
                 check(loaded.quest==2&&loaded.herbs==7&&loaded.coins==25,"Save em disco conserva missão, ervas e recompensa");
                 var document=UnityEngine.Object.FindFirstObjectByType<UIDocument>();
                 check(document.rootVisualElement.Q<Label>("questText")!=null&&document.panelSettings.textSettings.defaultFontAsset!=null,"Interface tem objetivo e fonte configurados");
+                bool geometry=true;
+                foreach(var character in new[]{game.Player,game.Conrad})foreach(var direction in new[]{Vector2.left,Vector2.right})
+                {
+                    character.Face(direction);character.Animate(0);
+                    foreach(var renderer in character.Transform.GetComponentsInChildren<SpriteRenderer>())
+                        if(renderer.name.StartsWith("Perna "))geometry&=renderer.sprite.vertices.Length==7;
+                }
+                check(geometry,"Recortes laterais dos dois atores aplicam a geometria no Unity");
                 Debug.Log(count+" verificações de exploração em Play passaram; progresso anterior será restaurado.");
             }
             finally
