@@ -1,23 +1,11 @@
-# PROJECT_STATE — demo Unity / Grünwald
+# Estado atual — 05/10/2026
 
-## CURRENT
-Unity 6.6, C#, Built-in, top-down ortogonal. Continuação da demo existente; não altera a numeração das builds HTML históricas. Pedido atual: melhorar passos do Player/Conrad e iniciar a cidade.
+Marcos autorizou uma grande atualização gráfica e mecânica, com visual/animação como prioridade. O pedido mais recente exige passos baixos e as duas pernas alternando. A restrição anterior de esperar após o passo 1 foi substituída por essa autorização.
 
-## IMPLEMENTADO
-- 16 poses novas por personagem (quatro direções, quatro poses); repouso separado, âncoras de cabeça e pés medidas.
-- Passos sincronizados à distância real; colisões com subpassos, deslizamento lateral e limites do mapa.
-- Praça, ruas, gramado e 13 objetos de cenário: casas, estalagem, guilda, ferraria, poço, mercado e árvores.
-- Câmera acompanha Player; Conrad patrulha a praça e pausa; ordenação vertical.
-- Menu de verificações no Editor; testes de regras de movimento independentes de Unity.
+Implementado e aplicado à pasta real do Editor: terreno novo, personagens neutros com pernas animadas independentemente, ambientação, câmera suave, HUD em UI Toolkit, corrida/fôlego, esquiva, interação com Conrad, coleta de três ervas, recompensa única de 25 moedas e save local.
 
-## TESTADO
-10 verificações C# executadas com .NET 8, incluindo 10.000 movimentos aleatórios, bloqueio em paredes, parada de passos, quatro direções, fase por distância e patrulha (>20 voltas). Sintaxe C# verificada por Roslyn com/sem ENABLE_INPUT_SYSTEM. Texturas RGBA, presença de todos os recortes e limites conferidos.
+Unity 6000.6.0f1: 20 verificações de lógica + 10 verificações em Play passaram. Capturas de cenário, HUD e poses de caminhada inspecionadas. Preservados cena, configuração local, arte original, GUIDs e progresso anterior aos testes. Backup anterior à atualização em `.local-backups/before-visual-update-20261004-220139` no workspace, fora do Git.
 
-## NÃO VALIDADO / LIMITAÇÕES
-Sem execução do Editor, Play Mode ou build Windows: ferramenta Unity CLI instalada, mas nenhum Editor/login disponível e cliente de licença inacessível. Ainda avaliar a fluidez visual e API compatibility no Unity 6.6. Poses são geradas; revisão artística fina pode ser necessária. Cena criada via EditorSceneManager; cenário aparece ao entrar em Play. Prédios sem interiores; atores não bloqueiam um ao outro nesta demo.
+A documentação operacional está em LEIA-ME.md. O histórico da transferência da nuvem está em `../../project-state/unity-local-2026-10-04.md`.
 
-## DECISÕES
-Pedido recente de Unity/top-down prevalece sobre HTML/isometria do Master Prompt. Aplicadas as diretrizes de continuar a base, separar responsabilidades, priorizar movimento/colisão, testar casos extremos e manter escopo pequeno. Mantidos WASD/setas da demo existente. Nenhum sistema de combate ou progressão adicionado. Sem online, dependências pagas ou pacotes externos.
-
-## NEXT
-Abrir na Unity 6.6, executar Vadronia > Verificar demo e teste manual de caminhada/colisão/ordenação. Ajustar ritmos e pivôs após observação em Play; depois decidir a primeira interação da praça antes de ampliar o mapa.
+Limites: prédios externos, um NPC, sem combate/interiores; caminhada procedural com recortes. Validado por ferramentas e capturas; avaliação manual da sensação do movimento cabe ao teste em Game. Não gerar builds Windows sem novo pedido explícito.

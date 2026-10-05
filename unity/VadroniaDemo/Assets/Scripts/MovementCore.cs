@@ -51,7 +51,7 @@ namespace Vadronia
     public sealed class WalkCycle
     {
         // Four poses: left contact, passing, right contact, passing. One cycle = two footsteps.
-        public const float Stride = 1.2f;
+        public const float Stride = 1.8f;
         public int Facing { get; private set; }
         public int Frame { get; private set; } = 1;
         public bool Moving { get; private set; }

@@ -39,8 +39,8 @@ namespace Vadronia.Editor
         [MenuItem("Vadronia/Verificar demo")]
         public static void ValidateDemo()
         {
-            int count = CoreChecks.Run(message => Debug.Log(message));
-            foreach (string name in new[] { "player-walk", "conrad-walk", "town" })
+            int count = AdventureChecks.Run(message => Debug.Log(message));
+            foreach (string name in new[] { "characters-neutral", "terrain-v2", "town" })
             {
                 var texture = Resources.Load<Texture2D>("Vadronia/" + name);
                 if (texture == null) throw new System.Exception("Textura ausente: " + name);

@@ -18,7 +18,7 @@ namespace Vadronia
             Check("Quatro poses e ciclo completo", () =>
             {
                 var cycle = new WalkCycle(); var frames = new HashSet<int>();
-                for (int i = 0; i < 120; i++) { cycle.Advance(.01f, 0); frames.Add(cycle.Frame); }
+                for (int i = 0; i < 120; i++) { cycle.Advance(WalkCycle.Stride / 120, 0); frames.Add(cycle.Frame); }
                 Require(frames.Count == 4, "Quadro nunca utilizado");
                 Require(cycle.Phase < .001f || cycle.Phase > .999f, "Comprimento do ciclo incorreto");
             }, report, ref count);

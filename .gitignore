@@ -1,0 +1,15 @@
+.local-backups/
+**/[Ll]ibrary/
+**/[Tt]emp/
+**/[Oo]bj/
+**/[Ll]ogs/
+**/[Uu]ser[Ss]ettings/
+**/[Bb]uild/
+**/[Bb]uilds/
+!builds/
+!builds/**
+**/Tests/bin/
+**/Tests/obj/
+*.csproj
+*.sln
+.vs/

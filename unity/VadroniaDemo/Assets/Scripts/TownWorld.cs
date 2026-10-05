@@ -8,25 +8,38 @@ namespace Vadronia
     {
         readonly GameObject root;
         readonly List<UnityEngine.Object> owned = new List<UnityEngine.Object>();
+        readonly VisualLibrary visuals = new VisualLibrary();
+        public Transform Root => root.transform;
         public readonly List<FootBlock> Blocks = TownLayout.Blocks();
         public TownWorld(Texture2D scenery)
         {
             root = new GameObject("Grünwald — ruas e praça");
-            var texture = PaintGround();
-            owned.Add(texture);
-            var ground = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.one * .5f, 32);
+            var texture = Resources.Load<Texture2D>("Vadronia/terrain-v2");
+            if(texture == null) { texture = PaintGround(); owned.Add(texture); }
+            var ground = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.one * .5f, texture.width/28f);
             owned.Add(ground);
-            Add("Chão", ground, Vector2.zero, 1, -10000);
+            var terrain = Add("Chão", ground, Vector2.zero, 1, -20000);
+            terrain.transform.localScale = new Vector3(1,22f/ground.bounds.size.y,1);
             for (int i = 0; i < TownLayout.Props.Length; i++)
             {
                 var prop = TownLayout.Props[i];
                 Rect bounds = TownAtlasLayout.Frames[prop.Sprite];
                 Sprite sprite = Sprite.Create(scenery, bounds, new Vector2(.5f, 0), bounds.width / prop.Width, 0, SpriteMeshType.FullRect);
                 owned.Add(sprite);
-                Add(prop.Name, sprite, new Vector2(prop.X, prop.Y), 1, -Mathf.RoundToInt(prop.Y * 100));
+                visuals.Add(root.transform,"Sombra — "+prop.Name,visuals.SoftDisc,new Vector2(prop.X+.3f,prop.Y-.12f),new Vector2(prop.Width*1.15f,prop.Width*.42f),new Color(.07f,.1f,.075f,.7f),-17000);
+                Add(prop.Name, sprite, new Vector2(prop.X, prop.Y), 1, -Mathf.RoundToInt(prop.Y * 100)*10);
+            }
+            // A forest border adds depth without adding collision across the plaza patrol.
+            for(int i=0;i<28;i++)
+            {
+                int type=i%3==0?4:5;Rect bounds=TownAtlasLayout.Frames[type];
+                var sprite=Sprite.Create(scenery,bounds,new Vector2(.5f,0),bounds.width/(2.2f+(i%4)*.23f));owned.Add(sprite);
+                float x=i<14?-13.8f+(i%2)*.4f:13.8f-(i%2)*.4f;
+                float y=-10.7f+(i%14)*1.65f;
+                Add("Bosque "+i,sprite,new Vector2(x,y),1,-Mathf.RoundToInt(y*100)*10);
             }
         }
-        void Add(string name, Sprite sprite, Vector2 position, float scale, int order)
+        SpriteRenderer Add(string name, Sprite sprite, Vector2 position, float scale, int order)
         {
             var renderer = new GameObject(name).AddComponent<SpriteRenderer>();
             renderer.transform.SetParent(root.transform);
@@ -34,6 +47,7 @@ namespace Vadronia
             renderer.transform.localScale = Vector3.one * scale;
             renderer.sprite = sprite;
             renderer.sortingOrder = order;
+            return renderer;
         }
         static Texture2D PaintGround()
         {
@@ -73,6 +87,7 @@ namespace Vadronia
         {
             if (root != null) UnityEngine.Object.Destroy(root);
             foreach (var asset in owned) if (asset != null) UnityEngine.Object.Destroy(asset);
+            visuals.Dispose();
         }
     }
 }
