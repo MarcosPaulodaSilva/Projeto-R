@@ -78,3 +78,11 @@ A checagem final identificou a conversão incorreta de unidades em `Sprite.Overr
 O script temporário de múltiplas cópias de atores gerou mensagens por tentar redefinir geometria de sprites já usados durante a renderização. Ele não faz parte dos Assets e não deve ser reutilizado. A inspeção final utilizou o próprio Player, sem recriar sprites ativos; capturas `gait-side-verified.png` e `gait-contact-verified.png`. Novo Play e testes concluídos com zero erros e zero avisos no Console. GUIDs antigos preservados e 75 arquivos de Assets conferidos por SHA-256 entre workspace e Editor, sem diferenças antes do ajuste; CharacterView e AdventurePlayChecks ressincronizados após a correção.
 
 Atualização publicada na branch `codex/unity-local-continuation` do repositório correto, sem merge na main.
+
+## Organização do repositório — 5 de outubro de 2026
+
+Marcos pediu separar Unity e HTML e confirmou **duas pastas no mesmo repositório**, não dois repositórios. A organização passa a ser `unity/` para Unity e `html/` para a versão de navegador. O projeto continua em `unity/VadroniaDemo`; este registro fica agora em `unity/project-state/`. A pré-produção Unity foi movida para `unity/docs/design/`.
+
+As versões HTML, seus estados, auditorias e prompt histórico ficam em `html/`. Lore, referências visuais e manifesto de áudio permanecem compartilhados em `docs/` e `assets/`. A página inicial aponta para os dois projetos e distingue a numeração HTML v0.16.0 da versão Unity.
+
+Esta reorganização não altera Assets, GUIDs, lógica ou a pasta do Editor em `C:/Users/Marcos/Downloads/VadroniaDemo`. Os documentos anteriores acima preservam seus caminhos e contexto históricos. Nenhuma versão Windows foi gerada.

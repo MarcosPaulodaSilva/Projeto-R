@@ -1,45 +1,33 @@
 # Projeto R — Vadronia
 
-Repositório principal do **Projeto R**, RPG de ação 2D isométrico em pixel art com fantasia medieval.
+As versões Unity e HTML estão separadas em duas pastas neste repositório.
 
-## Estado atual
+| Projeto | Pasta | Como abrir |
+|---|---|---|
+| **Unity — desenvolvimento atual** | [unity/](unity/README.md) | Adicione `unity/VadroniaDemo` no Unity Hub e abra com Unity 6.6. |
+| **HTML — navegador e histórico** | [html/](html/README.md) | Baixe e abra o [HTML v0.16.0](html/builds/v0.16/projeto-r-v0.16.0-vadronia.html) no navegador. |
 
-- Build atual: **v0.16.0 — Vadronia**
-- Região em foco: **Vadronia**
-- Núcleo jogável: **Grünwald + Ruínas + Castelo Morigan + Guilda**
-- Plataforma-alvo: **Windows**
-- Branch principal: `main`
-
-## Estrutura
+## Organização
 
 ```text
 Projeto-R/
-├─ builds/
-│  ├─ legacy/
-│  ├─ v0.14/
-│  ├─ v0.15/
-│  ├─ v0.16/
-│  └─ README.md
-├─ docs/
-│  ├─ design/
-│  ├─ lore/
-│  └─ prompts/
-├─ project-state/
-│  └─ README.md
-├─ reports/
-└─ README.md
+├─ unity/
+│  ├─ VadroniaDemo/       # Projeto Unity: Assets, Packages e ProjectSettings
+│  ├─ docs/              # Documentação específica de Unity
+│  └─ project-state/     # Continuação e validações locais de Unity
+├─ html/
+│  ├─ builds/            # HTMLs originais, incluindo v0.16.0
+│  ├─ docs/              # Prompts históricos da versão HTML
+│  ├─ project-state/     # Estados históricos da versão HTML
+│  └─ reports/           # Auditorias da versão HTML
+├─ docs/                 # Lore e referências visuais compartilhadas
+└─ assets/               # Documentação e manifesto de áudio compartilhados
 ```
 
-## Convenção de nomes
+As versões têm implementações e estados de desenvolvimento diferentes. A Unity atual é 2D top-down ortogonal, com exploração de Grünwald, corrida, esquiva e uma missão de Conrad. O HTML preserva a linha histórica v0.16.0; sua numeração não representa a versão Unity.
 
-- arquivos em minúsculas e `kebab-case`;
-- builds: `projeto-r-vX.Y.Z-vadronia.html`;
-- documentos de estado: `project-state-vX.Y.Z.md`;
-- auditorias: `auditoria-projeto-r-vX.Y.Z.*`;
-- versões históricas são preservadas e organizadas por linha de versão.
+O projeto local já aberto no Editor continua em `C:/Users/Marcos/Downloads/VadroniaDemo`. A organização do GitHub não exige mover essa pasta.
 
-A build oficial mais recente está em:
+As versões HTML, os assets Unity e os GUIDs foram preservados. O histórico Git anterior à separação permanece disponível. Não gerar executáveis ou pacotes Windows sem novo pedido explícito de Marcos.
 
-`builds/v0.16/projeto-r-v0.16.0-vadronia.html`
-
-Consulte `builds/README.md` para o histórico de builds e `project-state/README.md` para os estados do projeto disponíveis.
+[Lore e referências compartilhadas](docs/README.md) · [Manifesto de áudio](assets/music/README.md)

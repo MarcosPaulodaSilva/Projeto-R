@@ -6,8 +6,8 @@
 **/[Uu]ser[Ss]ettings/
 **/[Bb]uild/
 **/[Bb]uilds/
-!builds/
-!builds/**
+!html/builds/
+!html/builds/**
 **/Tests/bin/
 **/Tests/obj/
 *.csproj
