@@ -1,10 +1,21 @@
-# Material compartilhado do Projeto R
+# Documentação compartilhada — Projeto R
+
+Esta pasta contém informações que valem para mais de uma implementação.
+
+## Canônico
 
 - [Lore e história do mundo](lore/biblia-historia-mundo-lore-projeto-r.txt)
 - [Referências visuais](references/sprites/README.md)
-- [Documentação e manifesto de áudio](../assets/music/README.md)
+- [Índice compartilhado entre plataformas](shared/README.md)
 
-A documentação específica de cada implementação fica junto ao projeto:
+## Assets relacionados
 
-- [Unity](../unity/README.md): projeto do Editor, pré-produção e estado local.
-- [HTML](../html/README.md): versões de navegador, prompts históricos, estados e auditorias.
+- [Música e contexto de uso](../assets/music/README.md)
+- [Vídeos de referência](../assets/videos/README.md)
+
+## Projetos
+
+- [Unity](../unity/README.md)
+- [HTML](../html/README.md)
+
+As pastas `unity/docs/shared/` e `html/docs/shared/` mantêm cópias locais das informações essenciais para que trabalhar em uma plataforma isoladamente não faça lore, direção visual ou regras comuns desaparecerem do contexto.
