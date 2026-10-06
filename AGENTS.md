@@ -12,7 +12,9 @@
 ## Regras que não podem ser quebradas
 
 - Projeto ativo: Unity 6.6 / 6000.6.0f1, C#, 2D top-down ortogonal, Built-in pipeline.
-- Projeto do Editor: `unity/VadroniaDemo`.
+- Projeto no repositório: `unity/VadroniaDemo`.
+- Projeto aberto no PC de Marcos: `C:/Users/Marcos/Downloads/Projeto R/Projeto R Vadrônia Demo`.
+- O nome/caminho local e o caminho do GitHub são intencionalmente diferentes; não renomeie a pasta do repositório só para imitar o Windows.
 - Preserve `.meta`, GUIDs, saves, cenas e assets aprovados.
 - Não recrie sistemas já existentes sem antes inspecionar o código.
 - Não crie fontes duplicadas de verdade: atualize os documentos canônicos.
