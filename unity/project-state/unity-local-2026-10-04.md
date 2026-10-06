@@ -8,7 +8,7 @@ Repositório GitHub: https://github.com/MarcosPaulodaSilva/Projeto-R
 Base consultada: `85f2bb864a67d1f95b16f2c829f788d157ab94f0`, branch `main`.
 Branch local de trabalho: `codex/unity-local-continuation`.
 
-As instruções recentes substituem a apresentação histórica HTML/isométrica: demo Unity 6.6, 2D top-down, corpos visíveis, Player e um único NPC (Conrad). A base inicial tem mapa verde, movimento WASD/setas e patrulha.
+As instruções recentes consolidam a demo Unity 6.6 em 2D top-down, com corpos visíveis, Player e um único NPC (Conrad). A base inicial tem mapa verde, movimento WASD/setas e patrulha.
 
 Na etapa seguinte foram preparados na nuvem: caminhada em quatro direções ligada à distância percorrida, colisões nos pés com subpassos, câmera de acompanhamento e Grünwald inicial (ruas, praça, casas, estalagem, guilda, ferraria, poço, banca e árvores). Prédios são apenas fachadas; sem novos sistemas de combate ou interiores.
 
@@ -81,8 +81,8 @@ Atualização publicada na branch `codex/unity-local-continuation` do repositór
 
 ## Organização do repositório — 5 de outubro de 2026
 
-Marcos pediu separar Unity e HTML e confirmou **duas pastas no mesmo repositório**, não dois repositórios. A organização passa a ser `unity/` para Unity e `html/` para a versão de navegador. O projeto continua em `unity/VadroniaDemo`; este registro fica agora em `unity/project-state/`. A pré-produção Unity foi movida para `unity/docs/design/`.
+Em 05/10/2026, a organização do trabalho foi revista para centralizar o projeto jogável em `unity/VadroniaDemo`; este registro ficou em `unity/project-state/` e a pré-produção Unity em `unity/docs/design/`.
 
-As versões HTML, seus estados, auditorias e prompt histórico ficam em `html/`. Lore, referências visuais e manifesto de áudio permanecem compartilhados em `docs/` e `assets/`. A página inicial aponta para os dois projetos e distingue a numeração HTML v0.16.0 da versão Unity.
+Posteriormente, o repositório foi consolidado para manter apenas a implementação Unity. Lore, referências visuais, música e vídeos permanecem como fontes canônicas em `docs/` e `assets/`.
 
 Esta reorganização não altera Assets, GUIDs, lógica ou a pasta do Editor em `C:/Users/Marcos/Downloads/VadroniaDemo`. Os documentos anteriores acima preservam seus caminhos e contexto históricos. Nenhuma versão Windows foi gerada.

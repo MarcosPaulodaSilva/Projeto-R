@@ -2,9 +2,9 @@
 
 Este documento define como múltiplos agentes devem trabalhar no mesmo Projeto R sem perder progresso.
 
-## Fonte compartilhada
+## Fonte canônica
 
-O GitHub é o ponto de encontro entre os agentes. Não existe pressuposto de memória compartilhada entre conversas ou ambientes. O estado deve ficar registrado no repositório.
+O GitHub é o ponto de encontro entre os agentes. Não existe pressuposto de memória compartilhada entre conversas ou ambientes; decisões e estado devem ficar registrados no repositório.
 
 Arquivos que todo agente deve ler, nesta ordem:
 
@@ -30,14 +30,14 @@ A branch sempre nasce da `main` atualizada. Evite continuar branches antigas ape
 - confirme que não existe PR aberto alterando os mesmos arquivos;
 - leia o estado atual;
 - identifique quais arquivos serão tocados;
-- para Unity, preserve `.meta`, GUIDs e a estrutura do projeto.
+- preserve `.meta`, GUIDs, saves e a estrutura do projeto Unity.
 
 ## Durante a tarefa
 
 - prefira mudanças pequenas e verificáveis;
 - não combine reorganização massiva com mudança de gameplay no mesmo PR;
-- não copie documentação canônica para novos lugares sem necessidade;
-- mantenha links para a fonte canônica em vez de duplicar grandes blocos;
+- não duplique documentação canônica;
+- mantenha links para a fonte canônica em vez de copiar grandes blocos;
 - se uma decisão mudar, atualize o arquivo canônico correspondente.
 
 ## Ao finalizar
@@ -59,15 +59,17 @@ Se o estado jogável mudou, atualize também:
 
 ## Regra para evitar conflito entre dois agentes
 
-Se dois agentes precisarem trabalhar em paralelo, cada um deve usar arquivos ou subsistemas diferentes quando possível. Se ambos precisarem alterar o mesmo arquivo central, o segundo deve esperar o primeiro PR ser integrado ou então rebasing/reconciliar conscientemente antes do merge.
+Se dois agentes trabalharem em paralelo, cada um deve atuar em arquivos ou subsistemas diferentes quando possível. Se ambos precisarem alterar o mesmo arquivo central, o segundo deve partir do estado integrado mais recente ou reconciliar conscientemente as mudanças antes do merge.
 
 ## Documentação canônica
 
 - Coordenação atual: `/PROJECT_STATUS.md`
 - Regras para agentes: `/AGENTS.md`
-- Estado Unity: `/unity/VadroniaDemo/PROJECT_STATE.md`
-- Lore compartilhado: `/docs/lore/`
-- Assets compartilhados: `/assets/`
-- HTML histórico: `/html/`
+- Estado do jogo: `/unity/VadroniaDemo/PROJECT_STATE.md`
+- Super Master: `/unity/docs/prompts/super-master-prompt-projeto-r-unity.md`
+- Bíblia de design: `/unity/docs/design/biblia-projeto-r-pre-producao-unity-pos-auditoria.txt`
+- Lore: `/docs/lore/`
+- Referências visuais: `/docs/references/`
+- Áudio e vídeos: `/assets/`
 
-Não transforme prompts históricos em fonte de estado atual quando houver documento mais recente e específico.
+Não transforme documentos históricos em fonte de estado atual quando houver documento canônico mais recente.

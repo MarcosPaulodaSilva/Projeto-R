@@ -8,7 +8,7 @@ seu mundo, povos, reinos, personagens, conflitos, mistérios,
 instituições e trajetória narrativa do protagonista.
 
 Ele não é uma história do desenvolvimento do jogo. Portanto, não aborda
-Unity, HTML, Codex, arquitetura de software, performance, testes,
+Unity, Codex, arquitetura de software, performance, testes,
 prompts, agentes ou decisões técnicas de produção.
 
 Também não transforma mistérios deliberados em respostas. Quando o mundo

@@ -2,7 +2,7 @@
 
 Documento operacional único para qualquer agente que trabalhe na pasta `unity/`. Versão 1 — 05/10/2026.
 
-Derivado de: Super Master do HTML (`html/docs/prompts/super-master-prompt-projeto-r-base-v0.15-cloud.txt`), Bíblia de pré-produção Unity (`unity/docs/design/biblia-projeto-r-pre-producao-unity-pos-auditoria.txt`), `AGENTS.md` e `unity/project-state/`. O Super Master do HTML continua valendo **somente** para `html/`. Não misture implementações nem numerações de versão.
+Consolidado a partir do histórico de design do Projeto R, da Bíblia de pré-produção Unity (`unity/docs/design/biblia-projeto-r-pre-producao-unity-pos-auditoria.txt`), de `AGENTS.md`, do estado validado e das decisões úteis preservadas de protótipos anteriores. Este documento é a referência operacional única para a implementação Unity.
 
 Não conte a história dos prompts anteriores. Aplique as regras abaixo.
 
@@ -20,7 +20,7 @@ Hierarquia de decisão:
 4. `unity/VadroniaDemo/PROJECT_STATE.md` e `unity/project-state/`;
 5. comportamento estável comprovado no Editor;
 6. Bíblia Unity e documentos auxiliares;
-7. o Super Master e as versões HTML, apenas como **referência de comportamento**, nunca como código a copiar.
+7. documentos históricos do Projeto R já consolidados, apenas quando ajudarem a explicar uma decisão preservada.
 
 Não invente cânone ausente.
 
@@ -48,7 +48,7 @@ Nunca diga que compilou, testou, executou ou sincronizou se não fez.
 
 ## 1. Regras fixas do repositório e do ambiente
 
-- Repositório: `MarcosPaulodaSilva/Projeto-R`. Unity em `unity/`, HTML em `html/`. Lore, referências e manifesto de áudio compartilhados em `docs/` e `assets/`.
+- Repositório: `MarcosPaulodaSilva/Projeto-R`. Projeto Unity em `unity/`; lore, referências, música e vídeos canônicos em `docs/` e `assets/`.
 - Fontes Unity: `unity/VadroniaDemo`. Unity **6000.6.0f1**, C#, 2D top-down ortogonal, pipeline Built-in.
 - Projeto aberto por Marcos: `C:/Users/Marcos/Downloads/VadroniaDemo`. Alterações devem chegar a essa pasta e ser validadas ali; não entregar apenas ZIPs ou código solto. A pasta `../Projeto R` aponta a outro remoto: **não misturar**.
 - **Não gerar executáveis nem pacotes Windows** sem novo pedido explícito de Marcos.
@@ -66,7 +66,7 @@ Antes de editar: leia `PROJECT_STATE.md` e `unity/project-state/`, examine `Asse
 
 Não recrie do zero. Não reescreva por preferência. Não duplique sistemas (um Combat Core, um sistema de NPC, um inventário, um sistema de vida, um sistema de quests).
 
-**Linha de versão Unity:** a numeração Unity é **independente** da do HTML. Ainda não há uma linha oficial definida para o Unity; registre a proposta em `PROJECT_STATE` e aguarde a decisão de Marcos. Nunca reutilize números da linha HTML.
+**Linha de versão Unity:** ainda não há uma linha oficial definida; registre propostas em `PROJECT_STATE` e aguarde a decisão de Marcos antes de criar uma nova convenção de versão.
 
 Uma mecânica só está pronta se funciona, integra, é observável, é testável, cobre os edge cases principais e não quebra sistemas vizinhos.
 
@@ -80,7 +80,7 @@ Autonomia técnica para arquitetura local, algoritmos, dados, ordem, correções
 
 Projeto R é Action RPG + Roguelike + RPG de exploração + simulação leve de mundo.
 
-**Direção vigente (Unity):** 2D **top-down**, personagens de corpo visível, Unity 6.6. **Não** isométrico, **não** plataforma, **não** HTML. A isometria aparece na Bíblia e no HTML por herança histórica; para o Unity, vale a decisão mais recente (top-down).
+**Direção vigente (Unity):** 2D **top-down**, personagens de corpo visível, Unity 6.6. **Não** isométrico e **não** plataforma. Materiais históricos podem registrar direções anteriores; para o projeto atual, vale a decisão mais recente (top-down).
 
 Profundidade vem de: SISTEMAS SIMPLES + BOA INTEGRAÇÃO + CONSEQUÊNCIAS + COMPORTAMENTO COERENTE. Não vença pela quantidade de sistemas; vença pela integração.
 
@@ -101,7 +101,7 @@ Cânone que não pode ser reinterpretado silenciosamente:
 - Grandes Casas: Falkenberg (militar), Eichenwald (agricultura/comércio), Silberhain (conhecimento/ruínas). Nenhuma é boa ou má.
 - Migriard e Vitehria: apenas direção futura (ver Bíblia). Não expandir agora.
 
-**Nome decidido por Marcos (05/10/2026):** o NPC do Unity (antes "Conrad") e o do HTML ("Konrad", guarda + companion) são o **mesmo personagem**. O nome oficial nos dois projetos é **Konrad**, com K. Ao tocar em código, textos e documentação do Unity, renomeie "Conrad" para "Konrad" com cuidado (identificadores, textos de diálogo, nomes de atlas como `conrad-walk`) sem quebrar arquivos, `.meta` e GUIDs.
+**Nome decidido por Marcos (05/10/2026):** o nome oficial do personagem é **Konrad**, com K. A demo ainda pode conter referências antigas a "Conrad". Ao tocar nesses arquivos, renomeie com cuidado (identificadores, textos de diálogo, nomes de atlas como `conrad-walk`) sem quebrar arquivos, `.meta` e GUIDs.
 
 **Distinção de autoridade:** CANON (não reinterpretar), REQUISITO (precisa funcionar), DIREÇÃO (resultado desejado, implementação livre), SUGESTÃO (pode ser avaliada). Agentes **propõem**, não mudam pilares: nada de crafting complexo, mudança de permadeath, remoção da noite, companions controláveis, classes rígidas, alteração de sucessão ou substituição de sistemas centrais sem decisão de Marcos.
 
@@ -127,7 +127,7 @@ Limites atuais: sem combate, sem interiores, um NPC, uma missão.
 
 ## 6. Roteiro sugerido (confirmar com Marcos antes de cada etapa)
 
-Porte de **design**, não de código: reimplemente em C# idiomático usando o HTML como referência de comportamento. A Bíblia Unity e o Super Master HTML descrevem o alvo.
+Porte de **design**, não de código: implemente em C# idiomático usando a Bíblia Unity, este Super Master e o estado validado como referência de comportamento.
 
 1. Combat Core no Player (ataque com fases, block/parry com o mesmo comando, riposte) + um inimigo de teste.
 2. IA de inimigo mínima (percepção, investigar, perseguir, retornar/leash, sem atravessar paredes).
@@ -159,7 +159,7 @@ Regra do “continue”: dentro do escopo já autorizado, escolha a melhoria de 
 
 ## 8. Controles, Player e câmera
 
-- Controles atuais (`LEIA-ME.md`): WASD/setas caminham, Shift corre, Espaço esquiva, E interage, Esc pausa, F1 oculta interface, F5 salva. **Não altere mapeamentos sem pedido de Marcos.** Questão em aberto: o HTML usa R/D/F/G para mover (por limitação do teclado dele); o Unity usa WASD hoje.
+- Controles atuais (`LEIA-ME.md`): WASD/setas caminham, Shift corre, Espaço esquiva, E interage, Esc pausa, F1 oculta interface, F5 salva. **Não altere mapeamentos sem pedido de Marcos.** Há histórico de uso de R/D/F/G por limitação de teclado; qualquer mudança de input deve ser confirmada com Marcos e registrada.
 - Abstraia **ações de gameplay**, não teclas físicas (Input System ou camada própria), para permitir remapeamento e gamepad. Gamepad faz parte da visão: analógico esquerdo move 360°, direito mira; UI essencial utilizável sem mouse.
 - Player: movimento, colisão, mira, facing, HP, fôlego/stamina, mana quando aplicável, ataque, block, parry, esquiva, interação, inventário, equipamento, atributos, progressão, morte.
 - Movimento responsivo e previsível. Testar paredes, cantos, árvores, poço, entidades, esquiva, knockback e transições. Nunca atravessar sólido por bug.
@@ -175,7 +175,7 @@ Attack Intent → Attack State → Hit Detection → Validation → Damage → D
 
 - Ataques data-driven: damage, range, startup, active, recovery, staminaCost, knockback, stagger, tags. Fases STARTUP/ACTIVE/RECOVERY; hitbox só causa dano na fase ativa; debug expõe fase/hitbox/hurtbox.
 - Stamina: max/current/cost/regen/delay; controla ataque, esquiva e block. Block consome stamina por impacto; insuficiente = Guard Break.
-- Parry usa o **mesmo comando** do block; timing gera vantagem real. Referência do HTML: PERFECT PARRY → RIPOSTE com janela de ~1,35 s e benefício perceptível no próximo golpe válido (~35% de dano + stagger/knockback). Balancear por teste.
+- Parry usa o **mesmo comando** do block; timing gera vantagem real. Referência de design consolidada: PERFECT PARRY → RIPOSTE com janela aproximada de 1,35 s e benefício perceptível no próximo golpe válido (cerca de 35% de dano + stagger/knockback). Balancear por teste.
 - Esquiva: duração, distância, custo, i-frames, recuperação. Testar parede, ataque, stamina zero, multi-hit, hazard e transição.
 - À distância: projétil com owner/team/posição/velocidade/dano/vida/colisão; respeita cenário.
 - Magia reutiliza o Combat Core (projétil/área/status/cooldown/mana). Não criar um segundo jogo.
@@ -239,7 +239,7 @@ Attack Intent → Attack State → Hit Detection → Validation → Damage → D
 
 - **Três níveis:** lógica (determinística), integração (save, morte, dungeon, relações) e stress (cena pesada: noite, luzes, companions, NPCs, UI).
 - Ferramentas existentes: `Vadronia > Verificar demo`, `Vadronia > Verificar exploração em Play`, `Tests/`, `Tools/`, pacote `com.unity.pipeline` 0.8.0-exp.1 para operar o Editor por CLI. Estenda esses pontos em vez de criar frameworks novos.
-- Menu/overlay de debug no Editor equivalente ao `window.DEV` do HTML: alterar hora, teleportar, dar item/XP, simular relação, recrutar companion, provocar morte/down, iniciar dungeon por seed, visualizar IA/hitboxes, FPS e entidades ativas.
+- Menu/overlay de debug no Editor: alterar hora, teleportar, dar item/XP, simular relação, recrutar companion, provocar morte/down, iniciar dungeon por seed, visualizar IA/hitboxes, FPS e entidades ativas.
 - Assertions úteis: HP/stamina finitos; dinheiro e quantidades ≥ 0; IDs únicos; morto não ataca; quest concluída não ativa; civil em casa segura não sofre ameaça; boss alcançável; posição de companion válida; sem alvo inválido após transição; sem NaN.
 - Verificação no Editor: compilar, Console sem erros/avisos, rodar as verificações, executar Play, inspecionar capturas da Game view. Testes programáticos **não substituem** o teste físico de teclado e a avaliação artística de Marcos — diga isso.
 - Scripts temporários de verificação ficam fora de `Assets/` e não são reutilizados se geraram erros de runtime (ex.: redefinir geometria de sprite em uso).
@@ -270,7 +270,7 @@ Antes de um sistema grande: “Qual é a menor implementação que entrega a mai
 
 **NÃO:**
 
-- recomeçar ou recriar tudo; copiar cegamente arquivos do HTML ou de outra versão; misturar `unity/` e `html/` ou suas numerações;
+- recomeçar ou recriar tudo; copiar cegamente arquivos de protótipos ou versões antigas; misturar estados históricos com a base Unity validada;
 - gerar executável/pacote Windows sem pedido;
 - substituir arte original ou regenerar sprites chamando de transferência;
 - avançar etapa grande de gameplay sem autorização de Marcos;
