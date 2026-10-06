@@ -1,24 +1,16 @@
-# Documentação canônica — Projeto R / Unity
+# Documentação — índice rápido
 
-Esta pasta guarda a base de mundo, narrativa e referências usada pela implementação Unity.
+| Precisa de | Arquivo |
+|---|---|
+| Estado atual / próximo passo | [PROJECT_STATUS.md](../PROJECT_STATUS.md) |
+| Regras para agentes | [AGENTS.md](../AGENTS.md) |
+| Workflow Git | [WORKFLOW.md](WORKFLOW.md) |
+| Fundamentos do jogo | [PROJECT_FOUNDATIONS.md](PROJECT_FOUNDATIONS.md) |
+| Lore completo | [LORE_BIBLE.txt](lore/LORE_BIBLE.txt) |
+| Imagens e referências | [references/](references/) |
+| Master operacional Unity | [MASTER_PROMPT.md](../unity/docs/MASTER_PROMPT.md) |
+| Bíblia técnica/design | [PROJECT_BIBLE.txt](../unity/docs/PROJECT_BIBLE.txt) |
+| Estado do jogo Unity | [PROJECT_STATE.md](../unity/VadroniaDemo/PROJECT_STATE.md) |
+| Histórico técnico | [HISTORY.md](../unity/HISTORY.md) |
 
-## Fontes canônicas
-
-- [Lore e história do mundo](lore/biblia-historia-mundo-lore-projeto-r.txt)
-- [Referências visuais e sprites](references/sprites/README.md)
-- [Fundamentos de design do Projeto R](shared/README.md)
-- [Workflow de colaboração](WORKFLOW_AGENTS.md)
-
-## Documentação específica da Unity
-
-- [Projeto Unity](../unity/README.md)
-- [Super Master Prompt](../unity/docs/prompts/super-master-prompt-projeto-r-unity.md)
-- [Bíblia de pré-produção e arquitetura](../unity/docs/design/biblia-projeto-r-pre-producao-unity-pos-auditoria.txt)
-- [Estado atual](../unity/VadroniaDemo/PROJECT_STATE.md)
-
-## Assets relacionados
-
-- [Música e contexto de uso](../assets/music/README.md)
-- [Vídeos de referência](../assets/videos/README.md)
-
-Evite cópias paralelas destes documentos. Quando uma informação canônica mudar, atualize a fonte da raiz e os documentos operacionais que apontam para ela.
+Música e vídeos de referência ficam em `/assets/`. Evite criar cópias destes documentos em outras pastas.

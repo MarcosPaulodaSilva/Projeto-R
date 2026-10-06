@@ -2,7 +2,7 @@
 
 Documento operacional único para qualquer agente que trabalhe na pasta `unity/`. Versão 1 — 05/10/2026.
 
-Consolidado a partir do histórico de design do Projeto R, da Bíblia de pré-produção Unity (`unity/docs/design/biblia-projeto-r-pre-producao-unity-pos-auditoria.txt`), de `AGENTS.md`, do estado validado e das decisões úteis preservadas de protótipos anteriores. Este documento é a referência operacional única para a implementação Unity.
+Consolidado a partir do histórico de design do Projeto R, da Bíblia de pré-produção Unity (`unity/docs/PROJECT_BIBLE.txt`), de `AGENTS.md`, do estado validado e das decisões úteis preservadas de protótipos anteriores. Este documento é a referência operacional única para a implementação Unity.
 
 Não conte a história dos prompts anteriores. Aplique as regras abaixo.
 
@@ -17,7 +17,7 @@ Hierarquia de decisão:
 1. decisão explícita mais recente de Marcos;
 2. `AGENTS.md`;
 3. este Super Master;
-4. `unity/VadroniaDemo/PROJECT_STATE.md` e `unity/project-state/`;
+4. `unity/VadroniaDemo/PROJECT_STATE.md` e `unity/HISTORY.md`;
 5. comportamento estável comprovado no Editor;
 6. Bíblia Unity e documentos auxiliares;
 7. documentos históricos do Projeto R já consolidados, apenas quando ajudarem a explicar uma decisão preservada.
@@ -62,7 +62,7 @@ Nunca diga que compilou, testou, executou ou sincronizou se não fez.
 
 ## 2. Não recomeçar / preservar / linha de versão
 
-Antes de editar: leia `PROJECT_STATE.md` e `unity/project-state/`, examine `Assets/Scripts`, `Assets/Editor`, `Tests/` e `Tools/`, identifique sistemas existentes e preserve o trabalho funcional.
+Antes de editar: leia `PROJECT_STATE.md` e `unity/HISTORY.md`, examine `Assets/Scripts`, `Assets/Editor`, `Tests/` e `Tools/`, identifique sistemas existentes e preserve o trabalho funcional.
 
 Não recrie do zero. Não reescreva por preferência. Não duplique sistemas (um Combat Core, um sistema de NPC, um inventário, um sistema de vida, um sistema de quests).
 
@@ -288,7 +288,7 @@ Antes de um sistema grande: “Qual é a menor implementação que entrega a mai
 
 ## 18. PROJECT_STATE, “continue” e Definition of Done
 
-`unity/VadroniaDemo/PROJECT_STATE.md`, curto: **FEITO / ATUAL / PRÓXIMO / BUGS CONHECIDOS / DECISÕES IMPORTANTES**. Não é diário gigante. O histórico fica em `unity/project-state/` (datado).
+`unity/VadroniaDemo/PROJECT_STATE.md`, curto: **FEITO / ATUAL / PRÓXIMO / BUGS CONHECIDOS / DECISÕES IMPORTANTES**. Não é diário gigante. O histórico fica em `unity/HISTORY.md` (datado).
 
 Quando receber “continue”:
 

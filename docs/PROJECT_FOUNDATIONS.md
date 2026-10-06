@@ -33,10 +33,10 @@ Companions, progressão, equipamentos, dungeons, reputação/relações, consequ
 
 ## Fontes de autoridade
 
-- Lore: `/docs/lore/biblia-historia-mundo-lore-projeto-r.txt`
+- Lore: `/docs/lore/LORE_BIBLE.txt`
 - Referências visuais: `/docs/references/sprites/`
-- Super Master: `/unity/docs/prompts/super-master-prompt-projeto-r-unity.md`
-- Bíblia de design/arquitetura: `/unity/docs/design/biblia-projeto-r-pre-producao-unity-pos-auditoria.txt`
+- Super Master: `/unity/docs/MASTER_PROMPT.md`
+- Bíblia de design/arquitetura: `/unity/docs/PROJECT_BIBLE.txt`
 - Estado atual: `/unity/VadroniaDemo/PROJECT_STATE.md`
 
 Em caso de conflito, siga a hierarquia registrada em `/PROJECT_STATUS.md` e a decisão explícita mais recente de Marcos.

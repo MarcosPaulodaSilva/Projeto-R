@@ -1,51 +1,46 @@
 # Projeto R — Vadronia
 
-Este repositório contém **uma única implementação ativa: Unity**.
+**Única implementação ativa: Unity 6.6 / C# / 2D top-down.**
 
-## Comece aqui
+## Começar em menos de 1 minuto
 
-Para continuar o desenvolvimento sem perder contexto entre ChatGPT, Codex/Cloud e trabalho local:
-
-1. [Regras para agentes](AGENTS.md)
-2. [Painel operacional atual](PROJECT_STATUS.md)
-3. [Workflow de colaboração](docs/WORKFLOW_AGENTS.md)
-4. [Estado atual da Unity](unity/VadroniaDemo/PROJECT_STATE.md)
-5. [Super Master Prompt — Unity](unity/docs/prompts/super-master-prompt-projeto-r-unity.md)
-
-A `main` é a fonte canônica integrada. Cada tarefa deve partir dela em uma branch própria e voltar por pull request.
-
-| Área | Caminho | Função |
-|---|---|---|
-| **Unity** | [unity/](unity/README.md) | Projeto ativo em Unity 6.6 / C#. |
-| **Documentação canônica** | [docs/](docs/README.md) | Lore, design, regras e referências visuais. |
-| **Assets de referência** | [assets/](assets/README.md) | Música, vídeos de referência e manifestos. |
+1. Leia [PROJECT_STATUS.md](PROJECT_STATUS.md) — estado atual e próximo foco.
+2. Leia [AGENTS.md](AGENTS.md) — regras para editar sem quebrar o projeto.
+3. Trabalhe em `unity/VadroniaDemo/`.
+4. Para decisões de sistema, consulte [MASTER_PROMPT.md](unity/docs/MASTER_PROMPT.md).
 
 ## Estrutura
 
 ```text
 Projeto-R/
-├─ AGENTS.md                 # Regras obrigatórias para agentes
-├─ PROJECT_STATUS.md         # Estado operacional/handoff canônico
+├─ README.md
+├─ AGENTS.md
+├─ PROJECT_STATUS.md
 ├─ unity/
-│  ├─ VadroniaDemo/          # Projeto Unity real
+│  ├─ README.md
+│  ├─ HISTORY.md
 │  ├─ docs/
-│  │  ├─ design/             # Bíblia de pré-produção e arquitetura Unity
-│  │  └─ prompts/            # Prompt operacional canônico
-│  └─ project-state/         # Histórico e validações da Unity
+│  │  ├─ MASTER_PROMPT.md
+│  │  └─ PROJECT_BIBLE.txt
+│  └─ VadroniaDemo/          # projeto Unity real
 ├─ docs/
-│  ├─ WORKFLOW_AGENTS.md     # Colaboração entre agentes
-│  ├─ lore/                  # Lore canônico
-│  ├─ references/            # Imagens e referências visuais
-│  └─ shared/                # Fundamentos de design do Projeto R
+│  ├─ README.md
+│  ├─ WORKFLOW.md
+│  ├─ PROJECT_FOUNDATIONS.md
+│  ├─ lore/
+│  │  └─ LORE_BIBLE.txt
+│  └─ references/            # imagens e referências visuais
 └─ assets/
-   ├─ music/                 # Música e contexto de uso
-   └─ videos/                # Vídeos de referência
+   ├─ music/
+   └─ videos/
 ```
 
-## Regra de preservação
+## Regra simples
 
-Materiais úteis de protótipos anteriores foram consolidados na documentação do Unity, especialmente na Bíblia de pré-produção, no Super Master, no lore e nas referências visuais. Não recrie implementações antigas nem mantenha documentação duplicada quando já existir uma fonte canônica atual.
-
-Na máquina de Marcos, o projeto Unity já aberto no Editor continua em `C:/Users/Marcos/Downloads/VadroniaDemo`. A organização do GitHub não exige mover essa pasta.
-
-Não gerar executáveis ou pacotes Windows sem pedido explícito.
+- `main` = versão integrada.
+- uma tarefa = uma branch.
+- Unity é o único projeto jogável.
+- lore, imagens, música e vídeo ficam nas fontes canônicas da raiz.
+- preserve `.meta`, GUIDs, saves e assets aprovados.
+- não declare teste/compilação sem executar.
+- não gere build Windows sem pedido explícito.
