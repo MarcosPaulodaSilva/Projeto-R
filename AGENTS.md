@@ -20,6 +20,7 @@
 - Não gerar executável/pacote Windows sem pedido explícito de Marcos.
 - Respeite a separação `Core / Player / World / UI / Visual / Bootstrap`; não crie pasta nova sem código real que justifique um módulo.
 - Runtime não pode depender de `Assets/Editor`.
+- Mudanças na lógica coberta por `Tests/Regression.csproj` devem manter o workflow de regressão verde; isso não substitui validação Unity/Play Mode.
 - Se o estado do jogo mudar, atualize `PROJECT_STATUS.md` e `unity/VadroniaDemo/PROJECT_STATE.md`.
 
 ## Handoff

@@ -11,6 +11,7 @@
 | Master operacional Unity | [MASTER_PROMPT.md](../unity/docs/MASTER_PROMPT.md) |
 | Bíblia técnica/design | [PROJECT_BIBLE.txt](../unity/docs/PROJECT_BIBLE.txt) |
 | Estado do jogo Unity | [PROJECT_STATE.md](../unity/VadroniaDemo/PROJECT_STATE.md) |
+| Arquitetura técnica | [ARCHITECTURE.md](../unity/ARCHITECTURE.md) |
 | Histórico técnico | [HISTORY.md](../unity/HISTORY.md) |
 
 Música e vídeos de referência ficam em `/assets/`. Evite criar cópias destes documentos em outras pastas.

@@ -63,3 +63,9 @@ Quando os sistemas forem implementados, crie módulos irmãos somente quando hou
 - `.editorconfig`: padroniza edição básica.
 - `PROJECT_STATUS.md`: estado e próximo passo.
 - `AGENTS.md`: regras de operação.
+
+## Validação automática
+
+O workflow `.github/workflows/regression.yml` executa o projeto `Tests/Regression.csproj` em pull requests e na `main` quando a lógica coberta pelo teste muda. Ele valida regras puras sem exigir licença ou Editor Unity.
+
+Isso **não substitui Play Mode**. Mudanças de cena, renderização, input, física/integração Unity e comportamento visual continuam exigindo validação no Editor.
