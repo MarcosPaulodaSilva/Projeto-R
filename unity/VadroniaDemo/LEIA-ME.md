@@ -1,6 +1,6 @@
 # Vadronia — exploração de Grünwald
 
-Unity 6.6 (6000.6.0f1), C#, 2D top-down ortogonal, pipeline Built-in. Atualização visual e de exploração aplicada em 05/10/2026 no projeto do Editor: `C:/Users/Marcos/Downloads/VadroniaDemo`.
+Unity 6.6 (6000.6.0f1), C#, 2D top-down ortogonal, pipeline Built-in. Atualização visual e de exploração aplicada em 05/10/2026 no projeto do Editor: `C:/Users/Marcos/Downloads/Projeto R/Projeto R Vadrônia Demo`.
 
 ## Jogar no Editor
 
@@ -33,6 +33,6 @@ Esta é uma versão de exploração ampliada. Os prédios ainda são fachadas; n
 - Em Play, **Vadronia > Verificar exploração em Play**: 11 verificações de movimento, corrida, colisão na esquiva, repouso, pausa, diálogos, missão, recompensa, save em disco e interface. O teste restaura os arquivos de progresso anteriores; execute fora de uma sessão de jogo importante.
 - As duas rotinas foram executadas no Editor local em 05/10/2026. Console sem erros de compilação/execução no fechamento da validação. Cenário, interface e poses de caminhada inspecionados em capturas do Editor. Testes de controles foram programáticos; sensação ao jogar precisa da avaliação de Marcos.
 
-Nenhum executável ou pacote de distribuição Windows foi gerado. A pasta histórica `VadroniaDemo` foi mantida para preservar o projeto aberto.
+Nenhum executável ou pacote de distribuição Windows foi gerado. No PC de Marcos, a pasta atual do projeto é `Projeto R Vadrônia Demo`, dentro da pasta-pai `Projeto R`. No repositório, o caminho técnico permanece `unity/VadroniaDemo`.
 
 A procedência da arte nova está em `ARTWORK.md`. As imagens originais e seus .meta foram preservados.
