@@ -4,7 +4,8 @@
 
 - **Repositório:** `MarcosPaulodaSilva/Projeto-R`
 - **Branch integrada:** `main`
-- **Projeto Unity:** `unity/VadroniaDemo`
+- **Projeto Unity no GitHub:** `unity/VadroniaDemo`
+- **Projeto local no PC:** `C:/Users/Marcos/Downloads/Projeto R/Projeto R Vadrônia Demo`
 - **Engine:** Unity 6.6 / 6000.6.0f1
 - **Direção:** 2D top-down ortogonal, C#, Built-in pipeline
 - **Estado técnico:** `unity/VadroniaDemo/PROJECT_STATE.md`
