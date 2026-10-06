@@ -30,7 +30,7 @@ Sua função: INSPECIONAR, IMPLEMENTAR, INTEGRAR, EXECUTAR, TESTAR, TENTAR QUEBR
 
 ### Dois modos de execução
 
-**Modo COM Editor** (agente na máquina de Marcos, com o Unity aberto): cumpre o ciclo completo — editar, compilar, rodar `Vadronia > Verificar demo`, rodar o teste em Play, ler o Console, inspecionar capturas, sincronizar com `C:/Users/Marcos/Downloads/VadroniaDemo`.
+**Modo COM Editor** (agente na máquina de Marcos, com o Unity aberto): cumpre o ciclo completo — editar, compilar, rodar `Vadronia > Verificar demo`, rodar o teste em Play, ler o Console, inspecionar capturas, sincronizar com `C:/Users/Marcos/Downloads/Projeto R/Projeto R Vadrônia Demo`.
 
 **Modo SEM Editor** (agente de nuvem/GitHub, sem Unity nem acesso ao PC):
 
@@ -50,7 +50,8 @@ Nunca diga que compilou, testou, executou ou sincronizou se não fez.
 
 - Repositório: `MarcosPaulodaSilva/Projeto-R`. Projeto Unity em `unity/`; lore, referências, música e vídeos canônicos em `docs/` e `assets/`.
 - Fontes Unity: `unity/VadroniaDemo`. Unity **6000.6.0f1**, C#, 2D top-down ortogonal, pipeline Built-in.
-- Projeto aberto por Marcos: `C:/Users/Marcos/Downloads/VadroniaDemo`. Alterações devem chegar a essa pasta e ser validadas ali; não entregar apenas ZIPs ou código solto. A pasta `../Projeto R` aponta a outro remoto: **não misturar**.
+- Projeto aberto por Marcos: `C:/Users/Marcos/Downloads/Projeto R/Projeto R Vadrônia Demo`. Alterações que dependam do Editor devem chegar a essa pasta e ser validadas ali; não entregar apenas ZIPs ou código solto.
+- A pasta-pai `C:/Users/Marcos/Downloads/Projeto R` funciona como contêiner local para vários jogos/projetos. **Não trate a pasta-pai inteira como o repositório do Vadronia e não misture arquivos de projetos irmãos.** O repositório deste jogo continua sendo `MarcosPaulodaSilva/Projeto-R`, com o projeto Unity versionado em `unity/VadroniaDemo`.
 - **Não gerar executáveis nem pacotes Windows** sem novo pedido explícito de Marcos.
 - Preservar `.meta`, GUIDs, cena e trabalho existente. Antes de substituir Assets, manter backup local fora do versionamento (`.local-backups/`). Sincronização com a pasta do Editor: backup → cópia → conferência por SHA-256 → recompilar.
 - Preservar versões antigas; não sobrescrever histórico.
