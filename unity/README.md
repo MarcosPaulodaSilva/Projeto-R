@@ -7,7 +7,9 @@
 3. Aguarde a importação.
 4. Abra `Assets/Scenes/Vadronia.unity` e pressione Play.
 
-Na máquina de Marcos, a cópia usada no Editor está em `C:/Users/Marcos/Downloads/VadroniaDemo`.
+Na máquina de Marcos, a cópia usada no Editor está em `C:/Users/Marcos/Downloads/Projeto R/Projeto R Vadrônia Demo`.
+
+Esse é o **caminho local**. No GitHub, o projeto continua em `unity/VadroniaDemo`; não é necessário que o nome da pasta local e o caminho do repositório sejam iguais.
 
 ## Atalhos de documentação
 
