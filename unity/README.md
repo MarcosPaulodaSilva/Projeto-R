@@ -1,6 +1,6 @@
 # Projeto R — Unity
 
-Esta é a implementação **atualmente em desenvolvimento**, em **Unity 6.6 / 6000.6.0f1**, C#, 2D top-down ortogonal e pipeline Built-in.
+Esta é a implementação oficial do Projeto R, em **Unity 6.6 / 6000.6.0f1**, C#, 2D top-down ortogonal e pipeline Built-in.
 
 ## Abrir
 
@@ -17,16 +17,19 @@ Na máquina de Marcos, a cópia já aberta continua em `C:/Users/Marcos/Download
 - [Estado atual do projeto](VadroniaDemo/PROJECT_STATE.md)
 - [Histórico/validação local](project-state/unity-local-2026-10-04.md)
 - [Índice da documentação Unity](docs/README.md)
-- [Super Master Prompt — Unity](docs/prompts/super-master-prompt-projeto-r-unity.md)
-- [Design e pré-produção](docs/design/biblia-projeto-r-pre-producao-unity-pos-auditoria.txt)
-- [Informações compartilhadas copiadas localmente](docs/shared/README.md)
-- [Referência da linha HTML v0.16.1](docs/platform-reference/README.md)
+- [Super Master Prompt](docs/prompts/super-master-prompt-projeto-r-unity.md)
+- [Bíblia de design e arquitetura](docs/design/biblia-projeto-r-pre-producao-unity-pos-auditoria.txt)
+- [Lore canônico](../docs/lore/biblia-historia-mundo-lore-projeto-r.txt)
+- [Referências visuais](../docs/references/sprites/README.md)
+- [Fundamentos canônicos](../docs/shared/README.md)
+- [Música](../assets/music/README.md)
+- [Vídeos de referência](../assets/videos/README.md)
 - [Procedência da arte](VadroniaDemo/ARTWORK.md)
 
 ## Estado resumido
 
 O jogo atual possui exploração externa de Grünwald, animação procedural de caminhada, corrida, esquiva, HUD, interação com Conrad, missão de coleta e save local. Interiores e combate ainda não estão implementados.
 
-A versão de navegador fica em [html/](../html/README.md). Lore, referências visuais, música e vídeos de referência têm fontes canônicas compartilhadas na raiz do repositório e cópias de consulta em `docs/shared/`.
+Lore, referências visuais, música e vídeos de referência têm fontes canônicas na raiz do repositório. Evite criar cópias locais desnecessárias desses documentos.
 
 Nenhum executável Windows faz parte desta entrega.

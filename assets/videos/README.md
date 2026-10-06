@@ -15,4 +15,4 @@ Vídeos usados como referência de movimento, animação e direção visual deve
 
 O registro anterior apontava para um arquivo que não havia sido enviado ao repositório. Ele foi substituído por este arquivo e seu link válido. O SHA-256 confirma que o conteúdo corresponde à referência anteriormente catalogada; não havia um MP4 antigo no GitHub para apagar.
 
-Este é o vídeo original de referência. Sua inclusão no repositório não significa que os quadros já estejam integrados às animações da Unity ou do HTML.
+Este é o vídeo original de referência. Sua inclusão no repositório não significa que os quadros já estejam integrados às animações da Unity.
