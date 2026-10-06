@@ -1,50 +1,17 @@
-# Projeto R — Vadronia
+# Projeto R — repositório histórico
 
-**Única implementação ativa: Unity 6.6 / C# / 2D top-down.**
+⚠️ **Este repositório não é mais o repositório oficial de desenvolvimento do jogo.**
 
-## Começar em menos de 1 minuto
+O projeto Unity ativo foi migrado para:
 
-1. Leia [PROJECT_STATUS.md](PROJECT_STATUS.md) — estado atual e próximo foco.
-2. Leia [AGENTS.md](AGENTS.md) — regras para editar sem quebrar o projeto.
-3. Trabalhe em `unity/VadroniaDemo/`.
-4. Para localizar código, consulte [ARCHITECTURE.md](unity/ARCHITECTURE.md).
-5. Para decisões de sistema, consulte [MASTER_PROMPT.md](unity/docs/MASTER_PROMPT.md).
+`MarcosPaulodaSilva/Projeto-R-2026-10-06_00-13-56`
 
-No PC de Marcos, o projeto aberto no Unity Hub fica em `C:/Users/Marcos/Downloads/Projeto R/Projeto R Vadrônia Demo`. No GitHub, o caminho continua `unity/VadroniaDemo/` para manter uma estrutura técnica curta e estável.
+Nesse novo repositório, a raiz já é diretamente o projeto Unity (`Assets/`, `Packages/`, `ProjectSettings/`).
 
-## Estrutura
+## Uso deste repositório
 
-```text
-Projeto-R/
-├─ README.md
-├─ AGENTS.md
-├─ PROJECT_STATUS.md
-├─ unity/
-│  ├─ README.md
-│  ├─ HISTORY.md
-│  ├─ ARCHITECTURE.md
-│  ├─ docs/
-│  │  ├─ MASTER_PROMPT.md
-│  │  └─ PROJECT_BIBLE.txt
-│  └─ VadroniaDemo/          # projeto Unity real
-├─ docs/
-│  ├─ README.md
-│  ├─ WORKFLOW.md
-│  ├─ PROJECT_FOUNDATIONS.md
-│  ├─ lore/
-│  │  └─ LORE_BIBLE.txt
-│  └─ references/            # imagens e referências visuais
-└─ assets/
-   ├─ music/
-   └─ videos/
-```
+Este repositório permanece apenas como histórico/origem da migração e referência de decisões anteriores.
 
-## Regra simples
+**Não iniciar novas implementações, gameplay, assets ou refatorações aqui.**
 
-- `main` = versão integrada.
-- uma tarefa = uma branch.
-- Unity é o único projeto jogável.
-- lore, imagens, música e vídeo ficam nas fontes canônicas da raiz.
-- preserve `.meta`, GUIDs, saves e assets aprovados.
-- não declare teste/compilação sem executar.
-- não gere build Windows sem pedido explícito.
+Para continuar o jogo, use sempre a `main` de `MarcosPaulodaSilva/Projeto-R-2026-10-06_00-13-56`.
