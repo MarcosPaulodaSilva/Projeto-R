@@ -10,6 +10,8 @@
 4. Para localizar código, consulte [ARCHITECTURE.md](unity/ARCHITECTURE.md).
 5. Para decisões de sistema, consulte [MASTER_PROMPT.md](unity/docs/MASTER_PROMPT.md).
 
+No PC de Marcos, o projeto aberto no Unity Hub fica em `C:/Users/Marcos/Downloads/Projeto R/Projeto R Vadrônia Demo`. No GitHub, o caminho continua `unity/VadroniaDemo/` para manter uma estrutura técnica curta e estável.
+
 ## Estrutura
 
 ```text
