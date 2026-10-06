@@ -12,6 +12,7 @@ Na máquina de Marcos, a cópia usada no Editor está em `C:/Users/Marcos/Downlo
 ## Atalhos de documentação
 
 - Estado atual: [VadroniaDemo/PROJECT_STATE.md](VadroniaDemo/PROJECT_STATE.md)
+- Arquitetura do código: [ARCHITECTURE.md](ARCHITECTURE.md)
 - Controles/execução: [VadroniaDemo/LEIA-ME.md](VadroniaDemo/LEIA-ME.md)
 - Master operacional: [docs/MASTER_PROMPT.md](docs/MASTER_PROMPT.md)
 - Bíblia de design/arquitetura: [docs/PROJECT_BIBLE.txt](docs/PROJECT_BIBLE.txt)

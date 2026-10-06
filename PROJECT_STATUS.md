@@ -8,6 +8,7 @@
 - **Engine:** Unity 6.6 / 6000.6.0f1
 - **Direção:** 2D top-down ortogonal, C#, Built-in pipeline
 - **Estado técnico:** `unity/VadroniaDemo/PROJECT_STATE.md`
+- **Mapa de arquitetura:** `unity/ARCHITECTURE.md`
 - **Prompt operacional:** `unity/docs/MASTER_PROMPT.md`
 - **Bíblia de design/arquitetura:** `unity/docs/PROJECT_BIBLE.txt`
 - **Lore:** `docs/lore/LORE_BIBLE.txt`

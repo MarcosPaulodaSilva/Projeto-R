@@ -7,7 +7,8 @@
 1. Leia [PROJECT_STATUS.md](PROJECT_STATUS.md) — estado atual e próximo foco.
 2. Leia [AGENTS.md](AGENTS.md) — regras para editar sem quebrar o projeto.
 3. Trabalhe em `unity/VadroniaDemo/`.
-4. Para decisões de sistema, consulte [MASTER_PROMPT.md](unity/docs/MASTER_PROMPT.md).
+4. Para localizar código, consulte [ARCHITECTURE.md](unity/ARCHITECTURE.md).
+5. Para decisões de sistema, consulte [MASTER_PROMPT.md](unity/docs/MASTER_PROMPT.md).
 
 ## Estrutura
 
@@ -19,6 +20,7 @@ Projeto-R/
 ├─ unity/
 │  ├─ README.md
 │  ├─ HISTORY.md
+│  ├─ ARCHITECTURE.md
 │  ├─ docs/
 │  │  ├─ MASTER_PROMPT.md
 │  │  └─ PROJECT_BIBLE.txt

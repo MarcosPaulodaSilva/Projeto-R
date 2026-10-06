@@ -6,7 +6,8 @@
 2. Leia `unity/VadroniaDemo/PROJECT_STATE.md`.
 3. Edite somente a partir de uma branch criada da `main` atual.
 4. Se a tarefa mexer em sistemas/design, leia `unity/docs/MASTER_PROMPT.md`.
-5. Se mexer em cânone/lore, leia `docs/lore/LORE_BIBLE.txt`.
+5. Se mexer em código, use `unity/ARCHITECTURE.md` para escolher o módulo.
+6. Se mexer em cânone/lore, leia `docs/lore/LORE_BIBLE.txt`.
 
 ## Regras que não podem ser quebradas
 
@@ -17,6 +18,9 @@
 - Não crie fontes duplicadas de verdade: atualize os documentos canônicos.
 - Não afirmar “testado”, “compilado” ou “integrado” sem verificação real.
 - Não gerar executável/pacote Windows sem pedido explícito de Marcos.
+- Respeite a separação `Core / Player / World / UI / Visual / Bootstrap`; não crie pasta nova sem código real que justifique um módulo.
+- Runtime não pode depender de `Assets/Editor`.
+- Mudanças na lógica coberta por `Tests/Regression.csproj` devem manter o workflow de regressão verde; isso não substitui validação Unity/Play Mode.
 - Se o estado do jogo mudar, atualize `PROJECT_STATUS.md` e `unity/VadroniaDemo/PROJECT_STATE.md`.
 
 ## Handoff

@@ -7,6 +7,8 @@
 **/[Oo]bj/
 **/[Ll]ogs/
 **/[Uu]ser[Ss]ettings/
+**/[Mm]emoryCaptures/
+**/[Rr]ecordings/
 
 # Builds
 **/[Bb]uild/
@@ -18,5 +20,22 @@
 
 # IDE / generated project files
 *.csproj
+!unity/VadroniaDemo/Tests/Regression.csproj
 *.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
 .vs/
+.idea/
+.vscode/
+
+# OS noise
+.DS_Store
+Thumbs.db
