@@ -1,15 +1,22 @@
+# Local backups
 .local-backups/
+
+# Unity generated folders
 **/[Ll]ibrary/
 **/[Tt]emp/
 **/[Oo]bj/
 **/[Ll]ogs/
 **/[Uu]ser[Ss]ettings/
+
+# Builds
 **/[Bb]uild/
 **/[Bb]uilds/
-!html/builds/
-!html/builds/**
+
+# Test build output
 **/Tests/bin/
 **/Tests/obj/
+
+# IDE / generated project files
 *.csproj
 *.sln
 .vs/
