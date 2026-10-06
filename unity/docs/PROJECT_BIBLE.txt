@@ -19,7 +19,7 @@ inventar respostas canônicas para lacunas propositais.
 IDENTIDADE DO PROJETO
 ======================================================================
 
-Projeto R é um RPG de ação 2D em perspectiva isométrica, ambientado em
+Projeto R é um RPG de ação 2D em perspectiva top-down ortogonal, ambientado em
 um mundo medieval-fantástico composto por três reinos principais:
 Vadronia, Migriard e Vitehria. A proposta mistura exploração de
 overworld, combate em tempo real, progressão de personagem,
@@ -59,7 +59,7 @@ mundo inteiro.
 A implementação original auditada foi planejada em Unity para Windows,
 com suporte a teclado/mouse e controle desde o início.
 
-A perspectiva é isométrica fixa. A câmera não gira livremente o mapa.
+A perspectiva atual é top-down ortogonal. A câmera acompanha o jogador e não gira livremente o mapa.
 Ela acompanha o jogador suavemente e utiliza look-ahead influenciado
 pela direção da mira.
 
@@ -564,7 +564,7 @@ para mira independente.
 Gamepad: - analógico esquerdo move em 360°; - analógico direito mira/faz
 facing em 360°; - mira também influencia o look-ahead da câmera.
 
-A câmera: - isométrica fixa; - follow suave; - look-ahead; - não gira o
+A câmera: - top-down ortogonal; - follow suave; - look-ahead; - não gira o
 mundo.
 
 A UI essencial deve funcionar com controle. Não se permite criar
@@ -1343,8 +1343,8 @@ obrigado a seguir uma rota política. E, caso decida buscar poder,
 relações ou uma coroa, o mundo precisa exigir razões convincentes para
 aceitá-lo.
 
-Esse é o estado conceitual do Projeto R ao final da pré-produção Unity e
-da auditoria: um Action RPG isométrico de fantasia medieval, ambicioso
+Esse é o estado conceitual consolidado para produção Unity: um Action RPG
+top-down ortogonal de fantasia medieval, ambicioso
 em integração e identidade, mas conscientemente limitado em escopo para
 permanecer produzível, testável e tecnicamente sustentável.
 

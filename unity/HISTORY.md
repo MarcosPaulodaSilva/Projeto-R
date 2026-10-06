@@ -81,7 +81,7 @@ Atualização publicada na branch `codex/unity-local-continuation` do repositór
 
 ## Organização do repositório — 5 de outubro de 2026
 
-Em 05/10/2026, a organização do trabalho foi revista para centralizar o projeto jogável em `unity/VadroniaDemo`; este registro ficou em `unity/project-state/` e a pré-produção Unity em `unity/docs/design/`.
+Em 05/10/2026, a organização do trabalho foi revista para centralizar o projeto jogável em `unity/VadroniaDemo`; este registro foi consolidado em `unity/HISTORY.md` e a documentação central Unity em `unity/docs/`.
 
 Posteriormente, o repositório foi consolidado para manter apenas a implementação Unity. Lore, referências visuais, música e vídeos permanecem como fontes canônicas em `docs/` e `assets/`.
 
