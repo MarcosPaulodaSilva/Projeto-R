@@ -2,6 +2,17 @@
 
 O repositório está organizado em **duas implementações** e uma área **compartilhada**.
 
+## Comece aqui
+
+Para continuar o desenvolvimento sem perder contexto entre ChatGPT, Codex/Cloud e trabalho local:
+
+1. [Regras para agentes](AGENTS.md)
+2. [Painel operacional atual](PROJECT_STATUS.md)
+3. [Workflow de colaboração](docs/WORKFLOW_AGENTS.md)
+4. [Estado atual da Unity](unity/VadroniaDemo/PROJECT_STATE.md)
+
+A `main` é a fonte canônica integrada. Novas tarefas devem partir dela em branches separadas e voltar por pull request.
+
 | Área | Caminho | Função |
 |---|---|---|
 | **Unity — desenvolvimento atual** | [unity/](unity/README.md) | Projeto ativo em Unity 6.6 / C#. |
@@ -13,6 +24,8 @@ O repositório está organizado em **duas implementações** e uma área **compa
 
 ```text
 Projeto-R/
+├─ AGENTS.md                 # Regras obrigatórias para agentes
+├─ PROJECT_STATUS.md         # Estado operacional/handoff canônico
 ├─ unity/
 │  ├─ VadroniaDemo/          # Projeto Unity real
 │  ├─ docs/
@@ -23,18 +36,16 @@ Projeto-R/
 ├─ html/
 │  ├─ builds/                # Builds históricas do navegador
 │  ├─ docs/
-│  │  ├─ prompts/            # Prompt mestre histórico do HTML
-│  │  ├─ shared/             # Cópias locais das informações compartilhadas
-│  │  └─ platform-reference/ # Estado atual da implementação Unity
-│  ├─ project-state/         # Estados por versão HTML
-│  └─ reports/               # Auditorias históricas
+│  ├─ project-state/
+│  └─ reports/
 ├─ docs/
+│  ├─ WORKFLOW_AGENTS.md     # Como múltiplos agentes colaboram
 │  ├─ lore/                  # Lore canônico
 │  ├─ references/            # Referências visuais
 │  └─ shared/                # Índice de material entre plataformas
 └─ assets/
-   ├─ music/                 # Contexto e manifesto das trilhas
-   └─ videos/                # Vídeos de referência e manifesto
+   ├─ music/
+   └─ videos/
 ```
 
 ## Versões atuais
