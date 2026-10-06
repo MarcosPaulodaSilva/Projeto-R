@@ -17,7 +17,7 @@ O último pedido foi **aplicar apenas essa etapa no Editor local para teste e n�
 ## Estado inicial constatado (antes da transferência)
 
 - A pasta deste chat estava vazia, contendo somente um Git sem commits ou remoto. Agora contém a base do repositório GitHub.
-- A demo que o usuário abriu pelo Hub fica em `C:/Users/Marcos/Downloads/VadroniaDemo`, com Unity `6000.6.0f1`.
+- Naquela etapa, a demo aberta pelo Hub ficava em `C:/Users/Marcos/Downloads/VadroniaDemo` (caminho histórico anterior à reorganização), com Unity `6000.6.0f1`.
 - A demo local contém somente a versão anterior do mapa verde. Não contém `MovementCore.cs`, `TownWorld.cs` nem os novos atlas.
 - Os arquivos Unity da atualização não estão no commit do GitHub consultado.
 - Não foi encontrado `Vadronia-Atualizacao-Assets.zip` em Downloads. No chat de origem, o arquivo foi entregue como `/workspace/Vadronia-Atualizacao-Assets.zip`.
@@ -30,7 +30,7 @@ O último pedido foi **aplicar apenas essa etapa no Editor local para teste e n�
 
 Marcos autorizou enviar mensagem ao chat de origem e transferir pelo GitHub. O chat publicou a branch `codex/unity-grunwald-step1-transfer`, commit `bbfb8b51ddcf5f344aed6175f63dc125eab8ca19`: 43 arquivos conferidos contra o ZIP original. A primeira tentativa foi interrompida pelo limite de uso; a retomada concluiu o envio. Não houve merge na main.
 
-A branch local `codex/unity-local-continuation` recebeu esse commit por fast-forward. Os 34 arquivos de Assets foram copiados para `C:/Users/Marcos/Downloads/VadroniaDemo/Assets`, com igualdade SHA-256 verificada após a cópia e GUIDs existentes conferidos antes da substituição. A cena local, Packages (incluindo Pipeline) e ProjectSettings foram preservados. Tests, Tools e documentação também foram copiados. Backup completo anterior à substituição: `.local-backups/before-grunwald-20261004-215410/`.
+A branch local `codex/unity-local-continuation` recebeu esse commit por fast-forward. Naquela etapa, os 34 arquivos de Assets foram copiados para `C:/Users/Marcos/Downloads/VadroniaDemo/Assets` (caminho histórico anterior à reorganização), com igualdade SHA-256 verificada após a cópia e GUIDs existentes conferidos antes da substituição. A cena local, Packages (incluindo Pipeline) e ProjectSettings foram preservados. Tests, Tools e documentação também foram copiados. Backup completo anterior à substituição: `.local-backups/before-grunwald-20261004-215410/`.
 
 ## Validação realizada no Unity local
 
@@ -85,4 +85,12 @@ Em 05/10/2026, a organização do trabalho foi revista para centralizar o projet
 
 Posteriormente, o repositório foi consolidado para manter apenas a implementação Unity. Lore, referências visuais, música e vídeos permanecem como fontes canônicas em `docs/` e `assets/`.
 
-Esta reorganização não altera Assets, GUIDs, lógica ou a pasta do Editor em `C:/Users/Marcos/Downloads/VadroniaDemo`. Os documentos anteriores acima preservam seus caminhos e contexto históricos. Nenhuma versão Windows foi gerada.
+Esta reorganização não altera Assets, GUIDs ou lógica. Os documentos anteriores acima preservam caminhos históricos quando descrevem operações já realizadas. Nenhuma versão Windows foi gerada.
+
+## Mudança da pasta local — 5 de outubro de 2026
+
+Marcos reorganizou seus projetos locais dentro da pasta-pai `C:/Users/Marcos/Downloads/Projeto R`. O projeto do Vadronia passou a ficar em:
+
+`C:/Users/Marcos/Downloads/Projeto R/Projeto R Vadrônia Demo`
+
+O caminho dentro do GitHub **não foi renomeado** e continua `unity/VadroniaDemo`. Essa diferença é intencional: o nome local identifica melhor o jogo entre outros projetos no PC, enquanto o caminho do repositório permanece curto e estável para scripts, CI e documentação técnica.
