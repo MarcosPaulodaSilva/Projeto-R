@@ -1,6 +1,6 @@
 # Vadronia — exploração de Grünwald
 
-Unity 6.6 (6000.6.0f1), C#, 2D top-down ortogonal, pipeline Built-in. Atualização visual e de exploração aplicada em 05/10/2026 no projeto do Editor: `C:/Users/Marcos/Downloads/Projeto R/Projeto R Vadrônia Demo`.
+Unity 6.6 (6000.6.0f1), C#, 2D top-down ortogonal, pipeline Built-in. Projeto local atual aberto no Editor: `C:/Users/Marcos/Downloads/Projeto R/Projeto R Vadrônia Demo`.
 
 ## Jogar no Editor
 
